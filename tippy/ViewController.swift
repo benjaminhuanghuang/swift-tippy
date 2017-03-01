@@ -20,6 +20,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         loadDefaultTip()
+        calculateTip(self)
     }
 
     override func didReceiveMemoryWarning() {
@@ -30,6 +31,7 @@ class ViewController: UIViewController {
         super.viewWillAppear(animated)
         //print("view will appear")
         loadDefaultTip()
+        calculateTip(self)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
