@@ -14,6 +14,7 @@
 		6B5B87991E66912B00EB84D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B5B87971E66912B00EB84D4 /* LaunchScreen.storyboard */; };
 		6B5B87A41E66912B00EB84D4 /* tippyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5B87A31E66912B00EB84D4 /* tippyTests.swift */; };
 		6B5B87AF1E66912B00EB84D4 /* tippyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5B87AE1E66912B00EB84D4 /* tippyUITests.swift */; };
+		6B5B87BD1E66941300EB84D4 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 6B5B87BC1E66941300EB84D4 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		6B5B87AA1E66912B00EB84D4 /* tippyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tippyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B5B87AE1E66912B00EB84D4 /* tippyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tippyUITests.swift; sourceTree = "<group>"; };
 		6B5B87B01E66912B00EB84D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B5B87BC1E66941300EB84D4 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		6B5B87821E66912A00EB84D4 = {
 			isa = PBXGroup;
 			children = (
+				6B5B87BC1E66941300EB84D4 /* README.md */,
 				6B5B878D1E66912B00EB84D4 /* tippy */,
 				6B5B87A21E66912B00EB84D4 /* tippyTests */,
 				6B5B87AD1E66912B00EB84D4 /* tippyUITests */,
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B5B87BD1E66941300EB84D4 /* README.md in Sources */,
 				6B5B87911E66912B00EB84D4 /* ViewController.swift in Sources */,
 				6B5B878F1E66912B00EB84D4 /* AppDelegate.swift in Sources */,
 			);
