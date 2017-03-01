@@ -18,6 +18,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        loadDefaultTip()
     }
 
     override func didReceiveMemoryWarning() {
@@ -26,12 +28,8 @@ class ViewController: UIViewController {
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        print("view will appear")
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        print("view did appear")
+        //print("view will appear")
+        loadDefaultTip()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -39,14 +37,10 @@ class ViewController: UIViewController {
         print("view will disappear")
     }
     
-    override func viewDidDisappear(_ animated: Bool) {
-        super.viewDidDisappear(animated)
-        print("view did disappear")
-    }
     
     @IBAction func onTap(_ sender: Any) {
         
-        view.endEditing(true);
+        view.endEditing(true)
     }
 
    
@@ -61,6 +55,11 @@ class ViewController: UIViewController {
         tipLabel.text = String(format:"$%.2f", tip)
         totalLabel.text = String(format:"$%.2f", total)
     }
-
+    func loadDefaultTip()
+    {
+        let defaults = UserDefaults.standard
+        let intValue = defaults.integer(forKey: "tipIndex")
+        tipControl.selectedSegmentIndex = intValue
+    }
 }
 

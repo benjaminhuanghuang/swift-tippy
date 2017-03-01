@@ -112,8 +112,8 @@
         <!--Settings-->
         <scene sceneID="WNd-5L-6SG">
             <objects>
-                <viewController id="EC7-J2-YTx" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Q15-yr-o8S">
+                <viewController id="EC7-J2-YTx" customClass="SettingsViewController" customModule="tippy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Q15-yr-o8S" customClass="Settings">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -137,6 +137,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Settings" id="kzL-ih-coy"/>
+                    <connections>
+                        <outlet property="tipControl" destination="3g8-TY-OTE" id="eEf-1v-l63"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CHU-k8-f0O" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
